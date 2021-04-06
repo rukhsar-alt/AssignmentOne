@@ -15,11 +15,11 @@ public class SingleAlphabetView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_alphabet_view);
-        getSupportActionBar().setTitle("Alphabets");
+
 
         imageView=findViewById(R.id.imageView);
         String name= getIntent().getStringExtra("name").toLowerCase();
-
+        getSupportActionBar().setTitle(name.toUpperCase());
         //Toast.makeText(this, name, Toast.LENGTH_LONG).show();
 
         int imgId = getResources().getIdentifier(name, "drawable", this.getPackageName());

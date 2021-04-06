@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlphabetApplication">
-        <activity android:name=".SingleAlphabetView"></activity>
+        <activity android:name=".VideoActivity"
+            android:configChanges="orientation|screenSize"
+            ></activity>
+        <activity android:name=".SingleAlphabetView" />
         <activity android:name=".Dashboard" />
         <activity android:name=".AlphabetsView" />
         <activity android:name=".MainActivity">

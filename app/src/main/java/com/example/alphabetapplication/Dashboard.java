@@ -23,5 +23,12 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),AlphabetsView.class));
             }
         });
+
+        videoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),VideoActivity.class));
+            }
+        });
     }
 }

@@ -22,6 +22,7 @@ public class AlphabetsView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alphabets_view);
+        getSupportActionBar().setTitle("Alphabets");
         gridView=findViewById(R.id.gridview);
 
 //        ArrayList<String> alpha=new ArrayList<String>(26);
