@@ -5,28 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.GridView;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
-    Button continueButton;
-
+public class Dashboard extends AppCompatActivity {
+    Button alphabetsButton;
+    Button videoButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dashboard);
         getSupportActionBar().setTitle("Learn Alphabets");
-        continueButton=findViewById(R.id.continueButton);
-        continueButton.setOnClickListener(new View.OnClickListener() {
+        alphabetsButton =findViewById(R.id.alphabetsButton);
+        videoButton=findViewById(R.id.videoButton);
+        alphabetsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Dashboard.class));
+                startActivity(new Intent(getApplicationContext(),AlphabetsView.class));
             }
         });
-
     }
 }

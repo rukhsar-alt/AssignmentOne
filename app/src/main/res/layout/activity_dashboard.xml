@@ -4,23 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/background3">
-
+    android:background="@drawable/background3"
+    tools:context=".Dashboard">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/continueButton"
+        android:id="@+id/alphabetsButton"
+        android:layout_width="243dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/cartonicfont2"
+        android:text="Alphabets"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/videoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/videoButton"
         android:layout_width="243dp"
         android:layout_height="72dp"
         android:layout_marginBottom="56dp"
         android:background="@drawable/button"
         android:fontFamily="@font/cartonicfont2"
-        android:text="Continue"
-        android:textSize="35dp"
+        android:text="Video"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -29,11 +41,10 @@
         android:fontFamily="@font/cartonicfont2"
         android:text="Learn Alphabets"
         android:textSize="60dp"
-        app:layout_constraintBottom_toTopOf="@+id/continueButton"
+        app:layout_constraintBottom_toTopOf="@+id/alphabetsButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.154" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
